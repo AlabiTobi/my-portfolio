@@ -51,7 +51,7 @@ const Contact = () => {
         </div>
         </div>
       ),
-      href:'/public/Tobi-Alabi-cv.docx' ,
+      href:'/Tobi-Alabi-cv.docx' ,
       download: true,
     },
   ];
