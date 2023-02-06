@@ -3,6 +3,7 @@ import { BsFillPersonLinesFill, BsInfoCircleFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { Animate } from 'react-simple-animate';
+import tobialabi from './Tobi-Alabi-cv.docx';
 import PageHeader from '../../components/pageHeader/PageHeader';
 import './Contact.scss';
 
@@ -51,7 +52,7 @@ const Contact = () => {
         </div>
         </div>
       ),
-      href: "/tobialabi.pdf",
+      href: {tobialabi},
       download: true,
     },
   ];
