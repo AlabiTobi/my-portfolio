@@ -39,15 +39,9 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-        <nav className='navbar'>
-          <div className='navbar_container'>
-              <Link to='/' className='navbar_container_logo'>
-                <FaReact size={30} />
-              </Link>
-          </div>
-          
-          <ul className={`navbar_container_menu ${toggleIcon && 'toggle'}`}>
+    <>
+    
+    <ul className={`navbar_container_menu ${toggleIcon && 'toggle'}`}>
             {
               data.map((item, key)=>(  
                 <li key={key} className='navbar_container_menu_item'>
@@ -59,6 +53,15 @@ const Navbar = () => {
               ))
             }
           </ul>
+    <div className='navdiv'>
+        <nav className='navbar'>
+          <div className='navbar_container'>
+              <Link to='/' className='navbar_container_logo'>
+                <FaReact size={30} />
+              </Link>
+          </div>
+          
+
           <div className='nav_icon' onClick={handleToggleIcon}>
             {
               toggleIcon ? <HiX size ={30}/> : <FaBars size={30} />
@@ -67,6 +70,7 @@ const Navbar = () => {
         </nav>
 
     </div>
+    </>
   )
 }
 
